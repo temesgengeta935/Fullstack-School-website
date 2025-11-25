@@ -1,17 +1,17 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div
+      style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
+    >
       <NavBar />
-      <h1>This is the Home page</h1>
-      <p>
-        Welcome to our school website! We are dedicated to providing quality
-        education and fostering a supportive learning environment for all our
-        students. Explore our programs, meet our teachers, and stay updated with
-        the latest announcements and events happening at our school.
-      </p>
+      <main className="container" style={{ flex: "1" }}>
+        <h1 style={{ marginTop: "130px" }}>Home Page</h1>
+      </main>
+      <Footer />
     </div>
   );
 };

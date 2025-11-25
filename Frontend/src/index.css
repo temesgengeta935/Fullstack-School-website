@@ -84,6 +84,7 @@
   /* ---------------------------------- */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 4px 16px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.15);
 
   /* ---------------------------------- */
@@ -108,6 +109,16 @@
   --bp-md: 768px;
   --bp-lg: 1024px;
   --bp-xl: 1280px;
+
+  /* backdrop blur */
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(12px);
+
+  /* background color */
+  --bg-white: rgba(255, 255, 255, 0.55);
+  --bg-light: rgba(247, 247, 248, 0.55);
+  --bg-dark: rgba(25, 25, 25, 0.55);
 }
 
 html {
@@ -123,4 +134,12 @@ body {
   line-height: var(--line-height-normal);
   color: var(--text-color);
   background-color: var(--primary-color);
+}
+
+/* global class */
+.container {
+  max-width: var(--container-xl);
+  margin: auto;
+  height: 100%;
+  padding: 0 2rem;
 }

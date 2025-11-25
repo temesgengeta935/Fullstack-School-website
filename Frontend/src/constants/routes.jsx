@@ -1,4 +1,5 @@
 import React from "react";
+import EventDetails from "../pages/EventDetails";
 
 //==========================================
 // lazy load components
@@ -37,41 +38,57 @@ const userRoutes = [
     name: "Home",
     path: "/",
     component: <Home />,
+    showInMenu: true,
   },
+
   {
     name: "About",
     path: "/about",
     component: <About />,
+    showInMenu: true,
   },
   {
     name: "programs",
     path: "/programs",
     component: <Programs />,
+    showInMenu: true,
   },
   {
     name: "Teachers",
     path: "/teachers",
     component: <Teachers />,
+    showInMenu: true,
   },
   {
     name: "Announcements",
     path: "/announcements",
     component: <Announcements />,
+    showInMenu: true,
   },
   {
     name: "Events",
     path: "/events",
     component: <Events />,
+    showInMenu: true,
+  },
+  // dynamic routes for Events details
+  {
+    name: "Event Details",
+    path: "/events/:id",
+    component: <EventDetails />,
+    showInMenu: false,
   },
   {
     name: "gallery",
     path: "/gallery",
     component: <Gallery />,
+    showInMenu: true,
   },
   {
     name: "contact",
     path: "/contact",
     component: <Contact />,
+    showInMenu: true,
   },
 ];
 // admin routes
