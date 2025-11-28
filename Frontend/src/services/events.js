@@ -7,7 +7,13 @@ const initialEvents = [
     description:
       "An insightful discussion on the advancements and challenges in modern education.",
     date: "2024-07-15",
-    image: "/assets/images/event1.jpeg",
+    images: [
+      "/assets/images/event1.jpeg",
+      "/assets/images/event2.jpeg",
+      "/assets/images/event3.jpeg",
+      "/assets/images/event4.png",
+      "/assets/images/event5.jpeg",
+    ],
   },
   {
     id: 2,
@@ -15,7 +21,13 @@ const initialEvents = [
     description:
       "Join us for a day of health screenings, fitness classes, and wellness workshops.",
     date: "2024-08-20",
-    image: "/assets/images/event2.jpeg",
+    images: [
+      "/assets/images/event2.jpeg",
+      "/assets/images/event3.jpeg",
+      "/assets/images/event4.png",
+      "/assets/images/event5.jpeg",
+      "/assets/images/event1.jpeg",
+    ],
   },
   {
     id: 3,
@@ -23,7 +35,13 @@ const initialEvents = [
     description:
       "Explore the latest in technology and innovation with hands-on demos and expert talks.",
     date: "2024-09-10",
-    image: "/assets/images/event3.jpeg",
+    images: [
+      "/assets/images/event3.jpeg",
+      "/assets/images/event4.png",
+      "/assets/images/event5.jpeg",
+      "/assets/images/event1.jpeg",
+      "/assets/images/event2.jpeg",
+    ],
   },
   {
     id: 4,
@@ -31,7 +49,13 @@ const initialEvents = [
     description:
       "Celebrate diverse cultures with performances, food, and art from around the world.",
     date: "2024-10-05",
-    image: "/assets/images/event4.png",
+    images: [
+      "/assets/images/event4.png",
+      "/assets/images/event5.jpeg",
+      "/assets/images/event1.jpeg",
+      "/assets/images/event2.jpeg",
+      "/assets/images/event3.jpeg",
+    ],
   },
   {
     id: 5,
@@ -39,7 +63,13 @@ const initialEvents = [
     description:
       "Learn practical tips and strategies for living a more sustainable and eco-friendly lifestyle.",
     date: "2024-11-12",
-    image: "/assets/images/event5.jpeg",
+    images: [
+      "/assets/images/event5.jpeg",
+      "/assets/images/event1.jpeg",
+      "/assets/images/event2.jpeg",
+      "/assets/images/event3.jpeg",
+      "/assets/images/event4.png",
+    ],
   },
   //upcoming event
   {
@@ -48,7 +78,13 @@ const initialEvents = [
     description:
       "An elegant evening of dining and entertainment to support local charities.",
     date: "2026-12-18",
-    image: "/assets/images/event2.jpeg",
+    images: [
+      "/assets/images/event2.jpeg",
+      "/assets/images/event3.jpeg",
+      "/assets/images/event4.png",
+      "/assets/images/event5.jpeg",
+      "/assets/images/event1.jpeg",
+    ],
   },
 ];
 

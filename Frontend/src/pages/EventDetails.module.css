@@ -1,0 +1,19 @@
+.contents {
+  /* background-color: bisque; */
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  padding: 16px;
+  border-left: 4px solid rgb(218, 218, 218);
+  padding-left: 16px;
+  margin: 8px 20px;
+  color: var(--text-color);
+}
+/* left border */
+
+/* mobile media */
+@media (max-width: 600px) {
+  .contents {
+    margin: 8px 10px;
+    background-color: rgb(228, 225, 222);
+  }
+}

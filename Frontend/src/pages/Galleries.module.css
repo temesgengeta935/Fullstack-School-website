@@ -1,0 +1,104 @@
+.galleries {
+  /* background-color: lightblue; */
+}
+.contents {
+  border-radius: 8px;
+  /* box-shadow: var(--shadow-md); */
+  padding: 16px;
+  margin: 8px 0;
+  color: var(--text-color);
+  border-bottom: 10px solid rgb(218, 218, 218);
+  animation: borderPulse 3s infinite, slideIn 1s ease forwards;
+}
+
+.contents > h1 {
+  font-size: 4rem;
+  background: linear-gradient(
+    90deg,
+    #000000,
+    #feb47b,
+    #111010,
+    #feb47b,
+    #ff7e5f
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* animation: gradientAnimation 15s ease infinite, typing 1s steps(36) forwards,
+    blink 1s step-end infinite; */
+  animation: gradientAnimation 15s ease infinite;
+  /* width: 0; */
+  /* border-right: 2px solid red; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.contents > p {
+  font-size: 1.25rem;
+  margin-top: 12px;
+  color: var(--text-color);
+}
+/* Gradient Animation Keyframes */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Border Pulse Animation Keyframes */
+@keyframes borderPulse {
+  0% {
+    border-color: rgb(218, 218, 218);
+  }
+  50% {
+    border-color: rgb(150, 150, 150);
+  }
+  100% {
+    border-color: rgb(218, 218, 218);
+  }
+}
+
+/* Mobile break points */
+@media (max-width: 600px) {
+  .galleries {
+    /* background-color: lightsalmon; */
+  }
+  .contents {
+    margin: 2px 0;
+    padding: 12px;
+  }
+  .contents > h1 {
+    font-size: 3rem;
+    white-space: normal;
+  }
+}

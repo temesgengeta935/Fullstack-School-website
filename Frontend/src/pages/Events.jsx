@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
 import { fetchEvents } from "../services/events";
+import Loading from "../components/Loading";
 
 const Events = () => {
   const [filterType, setFilterType] = React.useState("all");
@@ -109,7 +110,7 @@ const Events = () => {
         </div>
 
         {/* LOADING */}
-        {isLoading && <p className={styles.loading}>Loading events...</p>}
+        {isLoading && <Loading message="Loading Events" />}
 
         {/* ERROR */}
         {error && <p className={styles.error}>{error}</p>}
@@ -126,7 +127,7 @@ const Events = () => {
           {events.map((event) => (
             <div key={event.id} className={styles.eventCard}>
               <img
-                src={event.image}
+                src={event.images[0]}
                 alt={event.title}
                 className={styles.eventImage}
               />

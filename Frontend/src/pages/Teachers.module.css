@@ -1,0 +1,80 @@
+.teachersHeader {
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  white-space: normal;
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.5s ease-in-out;
+  padding-bottom: 3rem;
+  border-bottom-left-radius: var(--radius-xl);
+  border-bottom-right-radius: var(--radius-xl);
+}
+.teachersHeader > h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.teachersHeader > p {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
+.teacherGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.teacherCard {
+  background-color: var(--color-background-light);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.teacherCard:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  transition: all 0.9s ease-in-out;
+  animation: none;
+}
+
+.teacherCard > h2 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.teacherCard > p:nth-child(2) {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.teacherCard > p:nth-child(3) {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.teacherPhotoContainer {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

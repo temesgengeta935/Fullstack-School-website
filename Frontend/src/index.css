@@ -119,6 +119,8 @@
   --bg-white: rgba(255, 255, 255, 0.55);
   --bg-light: rgba(247, 247, 248, 0.55);
   --bg-dark: rgba(25, 25, 25, 0.55);
+  --color-background-light: #ffffff;
+  --color-text-secondary: #656567;
 }
 
 html {
@@ -139,7 +141,27 @@ body {
 /* global class */
 .container {
   max-width: var(--container-xl);
-  margin: auto;
+  margin: 0 auto;
   height: 100%;
-  padding: 0 2rem;
+  width: 100%;
+  /* padding: 0 2rem; */
+}
+
+/* spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
