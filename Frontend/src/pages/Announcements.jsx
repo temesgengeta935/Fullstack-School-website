@@ -9,14 +9,14 @@
 // - Created date
 
 import React, { useEffect } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
 import { getAllAnnouncementsAndNews } from "../services/annoucements";
-import Button from "../components/Button";
-import Loading from "../components/Loading";
-import Error from "../components/Error";
+import Button from "../components/common/Button";
+import Loading from "../components/common/Loading";
+import Error from "../components/common/Error";
 import styles from "./Announcements.module.css";
-import Badge from "../components/Badge";
+import Badge from "../components/common/Badge";
 import { Download } from "lucide-react";
 
 const Announcements = () => {

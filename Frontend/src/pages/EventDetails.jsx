@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
 import { fetchEventById } from "../services/events";
-import Loading from "../components/Loading";
-import Error from "../components/Error";
-import ImageGallery from "../components/ImageGallery";
+import Loading from "../components/common/Loading";
+import Error from "../components/common/Error";
+import ImageGallery from "../components/common/ImageGallery";
 import styles from "./EventDetails.module.css";
 
 const EventDetails = () => {

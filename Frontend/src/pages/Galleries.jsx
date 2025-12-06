@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
 import styles from "./Galleries.module.css";
 import { getGalleries } from "../services/galleries";
-import ImageGallery from "../components/ImageGallery";
-import Loading from "../components/Loading";
-import Error from "../components/Error";
-import Button from "../components/Button";
+import ImageGallery from "../components/common/ImageGallery";
+import Loading from "../components/common/Loading";
+import Error from "../components/common/Error";
+import Button from "../components/common/Button";
 
 const Galleries = () => {
   const [galleries, setGalleries] = React.useState([]);

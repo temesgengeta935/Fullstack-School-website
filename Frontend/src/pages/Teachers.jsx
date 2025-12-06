@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
 import styles from "./Teachers.module.css";
 import { getAllTeachers } from "../services/teachers";
-import Loading from "../components/Loading";
-import Error from "../components/Error";
-import Button from "../components/Button";
+import Loading from "../components/common/Loading";
+import Error from "../components/common/Error";
+import Button from "../components/common/Button";
 
 const Teachers = () => {
   const [teachers, setTeachers] = React.useState([]);

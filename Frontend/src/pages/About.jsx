@@ -1,12 +1,31 @@
-import React from "react";
-import NavBar from "../components/NavBar";
+import AboutHero from "../components/about/hero";
+import styles from "./About.module.css";
+import NavBar from "../components/common/NavBar";
+// import Hero from "./sections/Hero";
+import MissionVision from "../components/about/missionVision";
+import Highlights from "../components/about/highlights";
+import Leadership from "../components/about/Leaderships";
+import Facilities from "../components/about/Facilities";
+import Achievements from "../components/about/Achievements";
+import CTA from "../components/about/CTA";
 
 const About = () => {
   return (
-    <div>
+    <main className={styles.about_page}>
       <NavBar />
-      <h1 style={{ marginTop: "130px" }}>About page</h1>
-    </div>
+      <AboutHero />
+      <MissionVision />
+
+      <Highlights />
+
+      <Leadership />
+
+      <Facilities />
+
+      <Achievements />
+
+      <CTA />
+    </main>
   );
 };
 

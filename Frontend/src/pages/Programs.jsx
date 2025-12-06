@@ -1,12 +1,21 @@
-import React from "react";
-import NavBar from "../components/NavBar";
+import CTA from "../components/about/CTA";
+import NavBar from "../components/common/NavBar";
+import ProgramsFeatures from "../components/programs/ProgramsFeatures";
+import ProgramsGrid from "../components/programs/ProgramsGrid";
+import ProgramsHero from "../components/programs/ProgramsHero";
+import styles from "./Programs.module.css";
 
 const Programs = () => {
   return (
-    <div>
+    <>
       <NavBar />
-      <h1>Programs</h1>
-    </div>
+      <div className={styles.programs}>
+        <ProgramsHero />
+        <ProgramsGrid />
+        <ProgramsFeatures />
+        <CTA />
+      </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { userRoutes } from "../constants/routes";
+import { userRoutes } from "../../constants/routes";
 import styles from "./NavBar.module.css";
 import { Menu, X } from "lucide-react";
 

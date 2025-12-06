@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 58, 138, 0.55);
+  z-index: 2;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.separator {
+  margin: 0 8px;
+  opacity: 0.7;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.7;
+}
+
+.hero_title {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: -1px;
+}
+
+.hero_subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0.95;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 350px;
+  }
+
+  .hero_title {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .hero_subtitle {
+    font-size: 16px;
+  }
+
+  .breadcrumbs {
+    font-size: 12px;
+  }
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../styles/Events.module.css";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
+import Button from "../components/common/Button";
 import { useNavigate } from "react-router-dom";
 import { fetchEvents } from "../services/events";
-import Loading from "../components/Loading";
+import Loading from "../components/common/Loading";
 
 const Events = () => {
   const [filterType, setFilterType] = React.useState("all");
